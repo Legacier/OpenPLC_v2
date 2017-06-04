@@ -16,7 +16,11 @@ Uso:
 
 Esto creará un servidor en el puerto 8080. Sólo es necesario abrir el navegador e ir a la dirección localhost:8080. Una vez la aplicación está siendo ejecutada, es posible conectarse al PLC virtual usando cualquier software MODBUS/TCP HMI.
 
+Nota: Esta versión de OpenPLC incluye la capa de hardware necesaria para soportar la plataforma OpenPiController.
+
 --------------------------------------------------------------------------------------------------------------------------------
+
+# OpenPLC v2
 
 This program is intended to emulate a PLC on a Linux machine. This virtual PLC uses the OpenPLC Software Stack to execute IEC 61131-3 programs and reply to MODBUS/TCP requests. Programs can be created using the PLCopen editor and then uploaded to this virtual PLC.
 
