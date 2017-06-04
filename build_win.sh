@@ -110,6 +110,14 @@ select opt in $OPTIONS; do
 		./build_core.sh
 		echo 'export PATH=$PATH:"/cygdrive/c/Program Files/nodejs/"' >> ~/.bashrc
 		exit
+	elif [ "$opt" = "OpenPiController" ]; then
+		cp ./hardware_layers/openpicontroller.cpp ./hardware_layer.cpp
+		cp ./core_builders/build_normal.sh ../build_core.sh
+		echo [OPENPLC]
+		cd ..
+		./build_core.sh
+		echo 'export PATH=$PATH:"/cygdrive/c/Program Files/nodejs/"' >> ~/.bashrc
+		exit
 	else
 		#clear
 		echo bad option
