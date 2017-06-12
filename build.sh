@@ -107,7 +107,7 @@ select opt in $OPTIONS; do
 		exit
 	elif [ "$opt" = "OpenPiController" ]; then
 		cp ./hardware_layers/openpicontroller.cpp ./hardware_layer.cpp
-		cp ./core_builders/build_normal.sh ../build_core.sh
+		cp ./core_builders/build_rpi.sh ../build_core.sh
 		echo [OPENPLC]
 		cd ..
 		./build_core.sh
